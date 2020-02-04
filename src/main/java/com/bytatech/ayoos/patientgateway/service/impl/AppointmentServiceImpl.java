@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.bytatech.ayoos.patientgateway.client.appointment.api.AppointmentCommandResourceApi;
 import com.bytatech.ayoos.patientgateway.client.appointment.model.AdditionalInformationRequest;
@@ -14,6 +15,7 @@ import com.bytatech.ayoos.patientgateway.client.appointment.model.ProcessPayment
 import com.bytatech.ayoos.patientgateway.service.AppointmentService;
 import com.bytatech.ayoos.patientgateway.web.rest.CommandResource;
 
+@Service
 public class AppointmentServiceImpl implements AppointmentService{
 	
 	private Logger log =LoggerFactory.getLogger(AppointmentServiceImpl.class);

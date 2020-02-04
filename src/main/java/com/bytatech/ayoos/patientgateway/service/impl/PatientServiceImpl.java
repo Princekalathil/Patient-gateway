@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.bytatech.ayoos.patientgateway.client.patient.api.PatientResourceApi;
 import com.bytatech.ayoos.patientgateway.client.patient.model.Patient;
@@ -15,6 +16,7 @@ import com.bytatech.ayoos.patientgateway.client.patient.model.PatientDTO;
 import com.bytatech.ayoos.patientgateway.service.PatientService;
 import com.bytatech.ayoos.patientgateway.web.rest.util.ServiceUtility;
 
+@Service
 public class PatientServiceImpl implements PatientService{
 	
 	private final Logger log= LoggerFactory.getLogger(PatientServiceImpl.class);

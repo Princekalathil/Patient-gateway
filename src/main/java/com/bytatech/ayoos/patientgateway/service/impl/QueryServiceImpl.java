@@ -10,11 +10,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import com.bytatech.ayoos.patientgateway.client.doctor.model.Qualification;
 import com.bytatech.ayoos.patientgateway.service.QueryService;
 import com.bytatech.ayoos.patientgateway.web.rest.util.ServiceUtility;
-
+@Service
 public class QueryServiceImpl implements QueryService{
 	
 	private Logger log = LoggerFactory.getLogger(QueryServiceImpl.class);
